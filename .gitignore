@@ -1,6 +1,6 @@
 HELP.md
 **/target/
-**/!.mvn/wrapper/maven-wrapper.jar
+**/.mvn
 
 ### STS ###
 **/.apt_generated
@@ -63,3 +63,4 @@ hs_err_pid*
 **/tmp
 **/out-tsc
 **/node_modules
+**/package-lock.json
