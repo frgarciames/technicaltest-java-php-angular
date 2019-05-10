@@ -1,0 +1,23 @@
+.api-dialog {
+  &__form-field {
+    width: 100%;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  &__select-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & mat-spinner {
+      margin-left: 1em;
+    }
+  }
+  &__error {
+    margin: 0;
+    color: red;
+    font-size: 13px;
+    margin-top: -1em;
+  }
+}

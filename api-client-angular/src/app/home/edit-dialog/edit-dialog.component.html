@@ -1,0 +1,23 @@
+<section class="edit-dialog__container">
+  <div class="edit-dialog__form">
+    <mat-form-field class="edit-dialog__form-field">
+      <input matInput placeholder="Name" [(ngModel)]="employee.name">
+    </mat-form-field>
+    <mat-checkbox color="primary" [(ngModel)]="employee.active">Active</mat-checkbox>
+  </div>
+  <div class="edit-dialog__form">
+    <mat-form-field>
+      <input matInput [matDatepicker]="pickerClockIn" placeholder="Clock In" [(ngModel)]="employee.clockIn">
+      <mat-datepicker-toggle matSuffix [for]="pickerClockIn"></mat-datepicker-toggle>
+      <mat-datepicker #pickerClockIn></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput [matDatepicker]="pickerClockOut" placeholder="Clock Out" [(ngModel)]="employee.clockOut">
+      <mat-datepicker-toggle matSuffix [for]="pickerClockOut"></mat-datepicker-toggle>
+      <mat-datepicker #pickerClockOut></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="edit-dialog__button">
+    <button mat-raised-button (click)="handleOnClick()">Update</button>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+.login {
+  &__container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card {
+    max-width: 20em;
+    width: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  &__form-field {
+    width: 100%;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

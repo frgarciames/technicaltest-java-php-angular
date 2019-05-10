@@ -1,0 +1,11 @@
+<section class="create-dialog__container">
+  <div class="create-dialog__form">
+    <mat-form-field class="create-dialog__form-field">
+      <input matInput placeholder="Name" [(ngModel)]="employee.name">
+    </mat-form-field>
+    <mat-checkbox [(ngModel)]="employee.active" color="primary">Active</mat-checkbox>
+  </div>
+  <div class="create-dialog__button">
+    <button mat-raised-button (click)="handleOnClick()">Create</button>
+  </div>
+</section>

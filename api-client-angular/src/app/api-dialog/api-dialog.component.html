@@ -1,0 +1,19 @@
+<section class="api-dialog__container">
+  <mat-form-field class="api-dialog__form-field">
+    <mat-label>Select API Server to get data</mat-label>
+    <mat-select class="api-dialog__select" [(value)]="selected">
+      <mat-option *ngFor="let option of apiServerOptions" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <p *ngIf="apiError" class="api-dialog__error">API Server seems to be off</p>
+  <div class="api-dialog__buttons">
+    <button mat-raised-button (click)="setApiServer()">
+      <div class="api-dialog__select-button">
+        Select
+        <mat-spinner [diameter]="20" *ngIf="loading"></mat-spinner>
+      </div>
+    </button>
+  </div>
+</section>

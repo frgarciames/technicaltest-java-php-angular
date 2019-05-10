@@ -1,0 +1,11 @@
+.edit-dialog {
+  &__form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
